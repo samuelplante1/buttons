@@ -1,0 +1,89 @@
+body {
+  background-color: #e0e0e0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 75px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 50px #ddd;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: auto;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  display: inline-block;
+  margin: 20px;
+  text-justify: center;
+  line-height: 100px;
+  color: #bbb;
+  box-shadow: 0px 3px 5px #ddd;
+}
+
+.box:hover {
+  animation: anim .35s ease-in-out forwards;
+
+}
+@keyframes anim {
+  0%{
+    transform: rotate(0deg) scale(0.9);
+  }
+  90%{
+    transform: rotate(370deg) scale(1.05);
+    box-shadow: 0px 3px 7px #ccc;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+    box-shadow: 0px 3px 7px #ccc;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.box1 {
+  --color: lemonchiffon;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+.box2 {
+  --color: lightblue;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+.box3 {
+  --color: tan;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+.box4 {
+  --color: lightcoral;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+.box5 {
+  --color: lightgray;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+.box6 {
+  --color: lightgreen;
+  background: var(--color);
+  border: 5px solid var(--color);
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  margin-top: 10px;
+}
